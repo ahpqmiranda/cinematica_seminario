@@ -1,0 +1,26 @@
+  \subsection{Table}
+
+    \begin{frame}{Example on using table}
+
+        \begin{table}[]
+            \centering
+            \caption{\label{tab:1}Countries and their codes}
+
+            \renewcommand{\arraystretch}{1.5}
+            \setlength{\tabcolsep}{10pt}
+
+            {\rowcolors{2}{}{LightGray!10}
+                \begin{tabular}{ p{3cm}p{3cm}p{3cm}  }
+                    \toprule
+                    \textbf{Country Name} & \textbf{Code 2} & \textbf{Code 3} \\
+                    \midrule
+                    Afghanistan           & AF              & AFG             \\
+                    Aland Islands         & AX              & ALA             \\
+                    Albania               & AL              & ALB             \\
+                    Algeria               & DZ              & DZA             \\
+                    \bottomrule
+                \end{tabular}
+            }
+        \end{table}
+
+    \end{frame}
