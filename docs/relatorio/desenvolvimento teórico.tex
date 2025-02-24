@@ -1,0 +1,56 @@
+\subsection{Desenvolvimento teórico: Movimento Geral}
+\label{sec:desenvolvimento}
+
+Como comentado anteriormente, um corpo rígido pode ser submetido ao movimento generalizado em três dimensões, sendo descritos por:
+uma velocidade angular \(\omega\) e uma aceleração angular \(\alpha\) em torno de um eixo de rotação, e uma velocidade linear \(v\) e uma aceleração linear \(a\) em relação a um ponto qualquer do corpo.
+
+Se for considerado a origem do sistema de coordenadas, fora do corpo rígido, atingimos o conceito de velocidade relativa, pois a velocidade linear depende do referencial adotado.
+
+Esta relação do movimento ocorre devido a existência de centros instanâneos de rotação que podem ser definidos por \(V_{B/A} = \omega \times r_{B/A}\) e a aceleração \(\alpha_{B/A} = \alpha \times r_{B/A} + \omega \times \left( \omega \times r_{B/A} \right)\).
+
+Estas equações permitem que as velocidades a acelerações absolutas sejam determinadas a partir das velocidades e acelerações relativas. Ou seja:
+
+\begin{equation}
+    v_B = v_A + \omega \times r_{B/A}
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(v_B\) é a velocidade do ponto B em relação ao referencial inercial;
+    \item \(v_A\) é a velocidade do ponto A em relação ao referencial inercial;
+    \item \(\omega\) é a velocidade angular do corpo rígido em relação ao referencial inercial;
+    \item \(r_{B/A}\) é o vetor posição do ponto B em relação ao ponto A;
+\end{itemize}
+
+e também...
+
+\begin{equation}
+    a_B = a_A + \alpha \times r_{B/A} + \omega \times \left( \omega \times r_{B/A} \right)
+\end{equation}
+onde:
+\begin{itemize}
+    \item \(a_B\) é a aceleração do ponto B em relação ao referencial inercial;
+    \item \(a_A\) é a aceleração do ponto A em relação ao referencial inercial;
+    \item \(\alpha\) é a aceleração angular do corpo rígido em relação ao referencial inercial;
+    \item \(r_{B/A}\) é o vetor posição do ponto B em relação ao ponto A;
+
+\end{itemize}
+
+Vale ressaltar que \(\alpha \times r_{B/A}\) são vetores e resultam em:
+
+\begin{equation}
+    \alpha \times r_{B/A} = \begin{bmatrix}
+                                i        & j        & k        \\
+                                \alpha_x & \alpha_y & \alpha_z \\
+                                r_x      & r_y      & r_z      \\
+    \end{bmatrix}
+\end{equation}
+
+e:
+
+\begin{equation}
+    \left( \omega \times r_{B/A} \right) = \begin{bmatrix}
+                                               i        & j        & k        \\
+                                               \omega_x & \omega_y & \omega_z \\
+                                               r_x      & r_y      & r_z      \\
+    \end{bmatrix}
+\end{equation}
